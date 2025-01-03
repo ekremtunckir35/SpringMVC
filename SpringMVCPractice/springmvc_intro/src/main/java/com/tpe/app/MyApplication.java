@@ -21,14 +21,14 @@ public class MyApplication {
         // anlıyamadığı için exception fırlatır
 //        MessageService service = context.getBean(MessageService.class);
 
-        MessageService service = context.getBean("mailService", MessageService.class);
-        MessageService service2 = context.getBean("mailService", MessageService.class);
-
-        if(service==service2) {
-            System.out.println("Aynı");
-        } else {
-            System.out.println("Farklı");
-        }
+        MessageService service = context.getBean("smsService", MessageService.class);
+//        MessageService service2 = context.getBean("mailService", MessageService.class);
+//
+//        if(service==service2) {
+//            System.out.println("Aynı");
+//        } else {
+//            System.out.println("Farklı");
+//        }
 
 
 
