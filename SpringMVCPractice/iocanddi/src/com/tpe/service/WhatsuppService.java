@@ -1,4 +1,10 @@
 package com.tpe.service;
 
-public class WhatsuppService {
+import com.tpe.domain.Message;
+
+public class WhatsuppService implements MessageService {
+
+     public void sendMessage(Message message){
+         System.out.println("Ben whatsupp servisiyim,size mesaj gonderiyorum:" + message.getMessage());
+     }
 }

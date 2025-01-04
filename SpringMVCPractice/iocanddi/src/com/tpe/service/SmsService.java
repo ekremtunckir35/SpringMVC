@@ -1,4 +1,9 @@
 package com.tpe.service;
 
-public class SmsService {
+import com.tpe.domain.Message;
+
+public class SmsService implements MessageService {
+    public void sendMessage(Message message) {
+        System.out.println("Ben sms servisiyim, size mesaj gonderiyorum:" + message.getMessage());
+    }
 }
