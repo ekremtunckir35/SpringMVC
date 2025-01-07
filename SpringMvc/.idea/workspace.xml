@@ -5,6 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb479dec-8391-44bc-885f-80f8fd91c040" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/catalina.policy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/catalina.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/jaspic-providers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/jaspic-providers.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/logging.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/tomcat-users.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/tomcat-users.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/web.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/RootConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/WebAppInitializer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/WebMvcConfig.java" afterDir="false" />
@@ -220,7 +233,7 @@
       <updated>1736161374840</updated>
       <workItem from="1736161376128" duration="2451000" />
       <workItem from="1736193552715" duration="6000" />
-      <workItem from="1736236945499" duration="10778000" />
+      <workItem from="1736236945499" duration="11202000" />
     </task>
     <servers />
   </component>
