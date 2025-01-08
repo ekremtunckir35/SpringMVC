@@ -5,127 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb479dec-8391-44bc-885f-80f8fd91c040" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/catalina.policy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/catalina.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/jaspic-providers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/jaspic-providers.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/server.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/tomcat-users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/tomcat-users.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.smarttomcat/SpringMvc/conf/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/RootConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/WebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/Seneryo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/domain/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/main/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/WhatsuppService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/OrnekProje.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/app/MyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/domain/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/DbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/FileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/SMSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/WhatsAppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWEbApp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWEbApp/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWEbApp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HelloWEbApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/iocanddi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/domain/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/main/MyApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/service/MailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/service/MessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/service/SmsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/iocanddi/src/com/tpe/service/WhatsuppService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/catalina.policy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/catalina.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/jaspic-providers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/jaspic-providers.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/server.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/tomcat-users.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/.smarttomcat/springmvc/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/RootContextConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/WebAppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/WebMvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/domain/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/repository/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/repository/StudentRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/service/StudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/java/com/tpe/service/StudentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/resources/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/WEB-INF/views/hi.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/WEB-INF/views/notFound.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/WEB-INF/views/student.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/WEB-INF/views/studentForm.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/resources/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc/src/main/webapp/resources/images/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/AppConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/app/MyApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/domain/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/repository/DbRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/repository/FileRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/repository/Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/service/MailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/service/MessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/service/SMSService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/java/com/tpe/service/WhatsAppService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVCPractice/springmvc_intro/src/main/resources/application.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/exception/StudentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/StudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMvcDers/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/main/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/SmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/SmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/WhatsuppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/WhatsuppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/OrnekProje.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/OrnekProje.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/app/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/app/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/DbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/DbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/MessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/SMSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/SMSService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/WhatsAppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/springmvc_intro/src/main/java/com/tpe/service/WhatsAppService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -168,7 +73,7 @@
     "Smart Tomcat.Tomcat9.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/B293/7-SpringMVC/SpringMvc",
+    "last_opened_file_path": "D:/B293/7-SpringMVC/SpringMvc/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -182,9 +87,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tpe.exception" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp" />
       <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp\resources" />
+      <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager">
@@ -197,9 +109,6 @@
       <option name="catalinaBase" value="C:\Users\ekrem\.SmartTomcat\SpringMvc\SpringMvc" />
       <option name="contextPath" value="/SpringMvc" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -233,7 +142,8 @@
       <updated>1736161374840</updated>
       <workItem from="1736161376128" duration="2451000" />
       <workItem from="1736193552715" duration="6000" />
-      <workItem from="1736236945499" duration="11202000" />
+      <workItem from="1736236945499" duration="12751000" />
+      <workItem from="1736323693317" duration="13869000" />
     </task>
     <servers />
   </component>
