@@ -1,6 +1,7 @@
 package com.tpe.controller;
 
 import com.tpe.domain.Student;
+import com.tpe.exception.StudentNotFoundException;
 import com.tpe.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -74,8 +75,8 @@ public class StudentController {
     //response:  ogrenciyi tabloya kaydedecegiz ve Liste gonderecegiz
 
     @PostMapping("/saveStudent")
-    public String addStudent(@Valid  @ModelAttribute Student student, BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+    public String addStudent(@Valid @ModelAttribute Student student, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
             return "studentForm";
         }
 
@@ -105,8 +106,28 @@ public class StudentController {
 //http://localhost:8080/SpringMvc/students/update?id=3
         }
 
+      //Kullanicidan bilgi nasil aliriz
+    //1- form üzerinden : form/body(JSON)
+    //2-query parametresi : / query?id =3
+    //3-path parametresi : /path/3
+    //query parametresi ve path parametresi sadece 1 tane isie isim belirtmek opsilyonledir,zorunlu degildir.
 
+    //4-bir öğrenciyi silme
+    //request : http://localhost:8080/SpringMvc/students/delete/4 + GET
+    //response :öğrenci silinir ve kalan öğrenciler gösterilir
 
+    @GetMapping("/delete/{id}")
+    public String deleteStudent(@PathVariable("id") Long identity){
+        service.deleteStudent(identity);
+        return "redirect:/students";
+    }
 
-
-}
+    @ExceptionHandler(StudentNotFoundException.class)
+    public ModelAndView handleException(Exception exception){
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.addObject("message",exception.getMessage());
+        modelAndView.setViewName("notFound");
+        return modelAndView;
+        //@ExceptionHandler:try-catch bloğunun mantığıyla benzer çalışır
+    }
+    }

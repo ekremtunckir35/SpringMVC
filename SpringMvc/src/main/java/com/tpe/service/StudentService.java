@@ -45,6 +45,11 @@ public class StudentService implements IStudentService{
 
     @Override
     public void deleteStudent(Long id) {
+        //id si verilen ogrenciyi bulma
+
+         Student student =findStudentById(id);
+
+        repository.delete(student);
 
     }
 }

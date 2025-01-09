@@ -1,5 +1,7 @@
 package com.tpe.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -61,7 +63,8 @@ public class Student {
     public void setGrade(Integer grade) {
         this.grade = grade;
     }
-
+    //jsonformat:JSON a dönüştürürken belirli bir format kullanılmasını sağlar
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     public LocalDateTime getCreateDate() {
         return createDate;
     }
