@@ -27,6 +27,9 @@ public class Student {
     @NotNull(message = "Please provide grade!")//null kabul etmez
     @Column(nullable = false)
     private Integer grade;
+
+    //jsonformat:JSON a dönüştürürken belirli bir format kullanılmasını sağlar
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createDate=LocalDateTime.now();
 
     //getter-setter
@@ -63,8 +66,7 @@ public class Student {
     public void setGrade(Integer grade) {
         this.grade = grade;
     }
-    //jsonformat:JSON a dönüştürürken belirli bir format kullanılmasını sağlar
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+
     public LocalDateTime getCreateDate() {
         return createDate;
     }

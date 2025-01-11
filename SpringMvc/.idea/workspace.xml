@@ -5,14 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb479dec-8391-44bc-885f-80f8fd91c040" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/controller/StudentRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/exception/StudentNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/exception/StudentNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/IStudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/service/IStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/IStudentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tpe/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tpe/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notFound.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notFound.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/studentForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/studentForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/students.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/students.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/domain/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/main/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/main/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMvcSteps/iocanddi/src/com/tpe/service/MailService.java" afterDir="false" />
@@ -39,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -73,7 +87,7 @@
     &quot;Smart Tomcat.Tomcat9.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/B293/7-SpringMVC/SpringMvc/src/main/webapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/B293/7-SpringMVC/SpringMvc/src/main/webapp/WEB-INF/views&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -88,9 +102,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tpe.service" />
       <recent name="com.tpe.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp\WEB-INF\views" />
       <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp" />
       <recent name="D:\B293\7-SpringMVC\SpringMvc\src\main\webapp\WEB-INF" />
     </key>
@@ -146,6 +162,10 @@
       <workItem from="1736323693317" duration="13869000" />
       <workItem from="1736409874633" duration="11260000" />
       <workItem from="1736466399052" duration="11000" />
+      <workItem from="1736514459850" duration="4104000" />
+      <workItem from="1736618851690" duration="23000" />
+      <workItem from="1736618909399" duration="8271000" />
+      <workItem from="1736628112952" duration="1485000" />
     </task>
     <servers />
   </component>

@@ -21,14 +21,11 @@ public class StudentController {
     @Autowired
     private IStudentService service;
 
-
     //NOT:controllerda metodlar geriye mav veya String data tipi döndürebilir.
+
     //http:localhost:8080/SpringMvc/students/hi + GET--okuma
     //http:localhost:8080/SpringMvc/students/hi + POST--kayıt
     //@RequestMapping("/students")
-
-
-
     @GetMapping("/hi")
     public ModelAndView sayHi(){
         //response u hazırlayacak
@@ -44,7 +41,6 @@ public class StudentController {
 
     //1-tüm öğrencileri listeleme:
     //http://localhost:8080/SpringMvc/students + GET
-
     @GetMapping
     public ModelAndView getStudents(){
         List<Student> allStudent=service.listAllStudents();
@@ -54,80 +50,86 @@ public class StudentController {
         return mav;
     }
 
-
-    //ogrenciyi kaydetme
+    //2-öğrenciyi kaydetmek için form gösterme
     //request: http://localhost:8080/SpringMvc/students/new + GET
-    //response: new.jsp form gostermek
-
+    //response:form göstermek
     @GetMapping("/new")
     public String sendForm(@ModelAttribute("student") Student student){
         return "studentForm";
     }
+    //ModelAttribute anotasyonu view katmanı ile controller arasında
+    //modelın transferini sağlar.
 
-//ModelAttribute anatasyonu view katmanı ile controller arasında modelın transferini sağlar.
-//view katmanında formda girilen verileri controllera taşır.
+    //işlem sonunda: studentın firstname,lastname ve grade değerleri set edilmiş halde
+    //controller classında yer alır
 
-//işlem sonunda: studentın firstname,lastname ve grade değerleri set edilmiş halde
-//controller classında yer alır
-
-       //2-b formun  icindeki ogrenciyi kaydetme
-    //request: http://localhost:8080/SpringMvc/students/saveStudent + POST
-    //response:  ogrenciyi tabloya kaydedecegiz ve Liste gonderecegiz
-
+    //2-b:formun içindeki öğrenciyi kaydetme
+    //request:http://localhost:8080/SpringMvc/students/saveStudent + POST
+    //response:öğrenciyi tabloya ekleyeceğiz ve liste göndereceğiz
     @PostMapping("/saveStudent")
-    public String addStudent(@Valid @ModelAttribute Student student, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) {
+    public String addStudent(@Valid @ModelAttribute("student")Student student, BindingResult bindingResult){
+
+        if (bindingResult.hasErrors()){
             return "studentForm";
         }
 
         service.addOrUpdateStudent(student);
 
-        return "redirect:/students";//students urline yönlendirme yapar
-                                    //http://localhost:8080/SpringMvc/students + GET
+        return "redirect:/students";//http://localhost:8080/SpringMvc/students + GET
 
     }
 
-        //3-ogrenciyi inceleyelim
-    //request: http://localhost:8080/SpringMvc/students/update?id =3 + GET
-    //response: update icin id si verilen ogrencinin bilgilerini formda goster
-    //id si verilen ogrenciyi bulmamiz gerekiyor ...
+    //3-öğrenciyi güncelleme
+    //request:http://localhost:8080/SpringMvc/students/update?id=3 + GET
+    //response:update için id si verilen öğrencinin bilgileri ile formu gösterme
+    //idsi verilen öğrenciyi bulmamız gerekir...
+    @GetMapping("/update")
+    public ModelAndView sendFormUpdate(@RequestParam("id") Long identity){
 
-        @GetMapping("/update")
-        public ModelAndView sendFormUpdate(@RequestParam("id") Long identity){
+        Student foundStudent= service.findStudentById(identity);
 
-        Student foundStudent=service.findStudentById(identity);
+        ModelAndView mav=new ModelAndView();
+        mav.addObject("student",foundStudent);
+        mav.setViewName("studentForm");
+        return mav;
+    }
 
-            ModelAndView mav=new ModelAndView();
-            mav.addObject("student",foundStudent);
-            mav.setViewName("studentForm");
-            return mav;
+    //kullanıcıdan bilgi nasıl alınır
+    //1-form/body(JSON)
+    //2-query param : /query?id=3
+    //3-path param : /3
+    //query param ve path param sadece 1 tane ise isim belirtmek opsiyonel
 
-//@RequestParam: request parametresi alır ve ilgili parametreyi ilgili metoda mapler
-//http://localhost:8080/SpringMvc/students/update?id=3
-        }
-
-      //Kullanicidan bilgi nasil aliriz
-    //1- form üzerinden : form/body(JSON)
-    //2-query parametresi : / query?id =3
-    //3-path parametresi : /path/3
-    //query parametresi ve path parametresi sadece 1 tane isie isim belirtmek opsilyonledir,zorunlu degildir.
 
     //4-bir öğrenciyi silme
     //request : http://localhost:8080/SpringMvc/students/delete/4 + GET
     //response :öğrenci silinir ve kalan öğrenciler gösterilir
-
     @GetMapping("/delete/{id}")
     public String deleteStudent(@PathVariable("id") Long identity){
+
         service.deleteStudent(identity);
+
         return "redirect:/students";
     }
 
+    //@ExceptionHandler:try-catch bloğunun mantığıyla benzer çalışır
     @ExceptionHandler(StudentNotFoundException.class)
     public ModelAndView handleException(Exception exception){
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.addObject("message",exception.getMessage());
         modelAndView.setViewName("notFound");
         return modelAndView;
-        //@ExceptionHandler:try-catch bloğunun mantığıyla benzer çalışır
     }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

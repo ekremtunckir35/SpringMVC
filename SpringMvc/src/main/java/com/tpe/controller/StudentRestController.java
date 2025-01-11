@@ -4,16 +4,16 @@ import com.tpe.domain.Student;
 import com.tpe.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 //@Controller
-@RestController //bu classta restfull serviceler gelistirilecek
-@RequestMapping("/api/")
+@RestController//bu classta restful serviceler geliştirilecek
+@RequestMapping("/api")
 public class StudentRestController {
-
 
     private final IStudentService service;
 
@@ -22,10 +22,17 @@ public class StudentRestController {
         this.service = service;
     }
 
-    //tum ogrencileri listeleme
-    //request: http://localhost:8080/SpringMvc/api/all + GET
-    @RequestMapping("/all")
-    public List<Student> allStudents(){
+    //1-tüm öğrencileri listeleme:
+    //http://localhost:8080/SpringMvc/api/all + GET
+    @GetMapping("/all")
+    public List<Student> allStudent(){
         return service.listAllStudents();
     }
+
+
+
+
+
+
+
 }
